@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Raleway",  Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #ccc;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#survey-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 15px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    align-items: center;
+}
+
+label {
+    text-align: right;
+}
+
+#gender-fieldset {
+    grid-area: 5/1/6/3;
+}
+
+#personality-fieldset {
+    grid-area: 6/1/7/3;
+}
+
+input, select {
+    justify-self: start;
+}
+
+input[type="submit"] {
+    grid-row: 8/9;
+    grid-column: 1/3;
+    justify-self: center;
+    padding: 10px 20px;
+    background: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    background: #fbc323;
+    cursor: pointer;
+}
+
+label[for="gender"], label[for="personality"], label[for="comments"] {
+    align-self: start;
+}
+
+li {
+    padding: 5px 0px;
+}
+
+li > label {
+    display: flex;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    margin-right: 10px;
+}

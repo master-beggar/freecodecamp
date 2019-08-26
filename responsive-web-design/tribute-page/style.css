@@ -1,0 +1,77 @@
+:root {
+    --background: #333;
+    --highlight: #fbc323;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, "Helvetic", sans-serif;
+    background: var(--background);
+    font-size: 16px;
+}
+
+#main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#title {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+#image {
+    height: auto;
+    max-width: 100%;
+}
+
+#tribute-info {
+    padding: 20px;
+}
+
+section {
+    padding: 10px;
+}
+
+#attacks {
+    padding-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+section {
+    width: 50%;
+    float: left;
+}
+
+a {
+    display: block;
+    clear: left;
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 20px;
+}
+
+@media (max-width: 800px){
+    section {
+      float: none;
+      width: 100%;
+    }
+}

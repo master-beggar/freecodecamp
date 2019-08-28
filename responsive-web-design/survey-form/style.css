@@ -32,7 +32,7 @@ header {
 
 #survey-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 20px 15px;
     padding: 30px;
     background: #fff;
@@ -44,22 +44,13 @@ label {
     text-align: right;
 }
 
-#gender-fieldset {
-    grid-area: 5/1/6/3;
-}
-
-#personality-fieldset {
-    grid-area: 6/1/7/3;
-}
-
 input, select {
-    justify-self: start;
+    justify-self: stretch;
 }
 
 input[type="submit"] {
-    grid-row: 8/9;
-    grid-column: 1/3;
     justify-self: center;
+    grid-column: 1/3;
     padding: 10px 20px;
     background: dodgerblue;
     border: none;
@@ -86,4 +77,30 @@ li > label {
 
 input[type="checkbox"], input[type="radio"]{
     margin-right: 10px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 6em;
+}
+
+@media (max-width: 600px) {
+    #survey-form {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    input[type="submit"]{
+        grid-column: 1/2;
+    }
+
+    label {
+        text-align: left;
+        margin-bottom: -10px;
+    }
+
+    input, select {
+        justify-self: center;
+    }
 }

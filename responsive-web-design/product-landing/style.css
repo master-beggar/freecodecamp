@@ -55,6 +55,11 @@ body {
   margin: 40px 0px;
 }
 
+#video {
+  height: 450px;
+  width: 100%;
+}
+
 .spec {
   display: flex;
   flex-flow: row wrap;
@@ -141,8 +146,45 @@ body {
 }
 
 /* MEDIA QUERIES */
-@media (max-size: 758px){
+@media (max-width: 900px){
+  .spec-desc {
+    padding-left: 0px;
+  }
+
+  .spec-icon {
+    display:none;
+  }
+
+  #pricing {
+    flex-flow: column nowrap;
+    /* align-items: center; */
+
+  }
+
+  .price-category {
+    margin-bottom: 20px;
+    width: 400px;
+    max-width: 80%;
+    align-self: center;
+  }
+
   #header > .container {
     flex-direction: column;
   }
+
+  #header-img {
+    margin-bottom: 20px;
+  }
+
+  #form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  #form label, #form input[type="email"] {
+    margin-bottom: 10px;
+  }
+  
+
 }

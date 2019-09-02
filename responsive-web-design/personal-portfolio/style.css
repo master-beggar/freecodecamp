@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
+  height: 7.5%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: tomato;
+  z-index: 1;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+  display: block;
+  padding: 0px 40px;
+  position: relative;
+}
+
+#navbar a:hover {
+  animation-name: move-down;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #000, #666);
+}
+
+#welcome-section h1 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#welcome-section p {
+  font-weight: 400;
+  color: tomato;
+  font-size: 1.25em;
+  position: relative;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+}
+
+#projects {
+  background: dodgerblue;
+  padding: 40px;
+}
+
+#projects h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+}
+
+#tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.project-tile {
+  position: relative;
+  display: inline-block;
+}
+
+.project-tile h3 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+}
+
+.project-tile img { 
+  display: block;
+  border: 1px solid #000;
+  max-width: 100%;
+  height: auto;
+}
+
+#contact {
+  background: darkgreen;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact h3 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25em;
+  position: relative;
+}
+
+#contact a:hover {
+  animation-name: move-down;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-down {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 7px;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
